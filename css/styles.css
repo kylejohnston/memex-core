@@ -1,0 +1,111 @@
+.content h1 span { border-top: 3px solid orange; padding-top: .4rem; }
+
+
+/* https://codepen.io/AdamBlum/pen/fwrnE */
+*, *:before, *:after { box-sizing:  border-box !important; }
+body {
+	font-family: monospace;
+	line-height: 1.3rem;
+	margin: 1rem;
+	background:hsl(34, 20%, 95%) 100%);
+}
+
+nav { line-height: 1.3rem; margin: 1rem 0 2.5rem 0; }
+
+article.home {
+	width: 50%;
+	-moz-column-width: 50%;
+	-webkit-column-width: 50%;
+	column-gap: 1em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+body.home article p {
+	border-left: 3px solid orange;
+	padding: 0 0 0 2rem;
+}
+
+/* CSS GRID-BASED MASONRY LAYOUT */
+article {
+	column-width: 33em;
+	-moz-column-width: 33em;
+	-webkit-column-width: 33em;
+	column-gap: 1em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em; 
+}
+.item {
+	display: inline-block;
+	margin: 0.6rem 0;
+	padding-top: .4rem;
+	border-top: 3px solid orange;
+	width: 100%; 
+	/* lazy load styles */
+	height: auto;
+}
+
+.item img {
+	width: 100%;
+}
+*/
+
+/* LAZY LOAD STYLES */
+img:not([src]) {
+	visibility: hidden;
+}
+
+/** LIGHTBOX MARKUP **/
+.thumbnail {
+  max-width: 40%;
+}
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+}
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 95%;
+	max-height: 98%;
+	margin-top: 1%;
+}
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+	/** Unhide lightbox **/
+	display: block;
+}
+
+/*
+	BREAKPOINTS
+	SM 544
+	MD 768
+	LG 1012
+	XL 1280
+
+*/	
+
+@media (max-width: 768px) {
+article.home {
+	width: 100%;
+	-moz-column-width: 100%;
+	-webkit-column-width: 100%;
+	column-gap: 1em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	}
+}
+
