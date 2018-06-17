@@ -7,11 +7,11 @@ The term memex comes from [Vanner Bush’s](https://en.wikipedia.org/wiki/Vannev
 
 # How it works
 On each page, a snippet of PHP defines the path to an image directory:
-'''
+```
 $www_root = 'http://your-url/img/';
 $dir = 'img/';
 include('includes/renderer.php');
-'''
+```
 
 **renderer.php** looks for any images in that directory, including JPGs, PNGs, and GIFs. For each image found, it renders in a DIV with a link to view the image in a lightbox.
 
