@@ -7,6 +7,7 @@ The term memex comes from [Vanner Bush’s](https://en.wikipedia.org/wiki/Vannev
 
 # How it works
 On each page, a snippet of PHP defines the path to an image directory:
+
 ```
 $www_root = 'http://your-url/img/';
 $dir = 'img/';
