@@ -1,5 +1,5 @@
 # memex core
-A simple PHP appliction that reads all images from a directory displays them on a page. Images are displayed in a masonry layout using CSS grid. Features a CSS-only lightbox and lazy loading with beLazy.js
+A simple PHP appliction that reads all images from a directory displays them on a page. Images are displayed in a simple grid layout using CSS grid. Features a CSS-only lightbox and lazy loading with lazysize.js.
 
 This is a bare bones, starter version of the application. View my [memex repository](https://github.com/kylejohnston/memex) to see how I'm using it as my personal [morgue file](https://en.wikipedia.org/wiki/Morgue_file) or flat file – kind of a self-hosted Pinterest that I use for design inspiration.
 
@@ -16,4 +16,4 @@ include('includes/renderer.php');
 
 **renderer.php** looks for any images in that directory, including JPGs, PNGs, and GIFs. For each image found, it renders in a DIV with a link to view the image in a pure CSS lightbox (h/t [Gregory Schier](https://codepen.io/gschier/pen/HCoqh)).
 
-The images are displayed in a masonry-style layout using CSS grid (h/t [Adam Blum](https://codepen.io/AdamBlum/pen/fwrnE)). [beLazy.js](http://dinbror.dk/blazy/) is used to lazy load the images.
+The images are displayed in a simple grid (using CSS Grid) and [lazysizes.js](https://github.com/aFarkas/lazysizes) is used to lazy load the images.
