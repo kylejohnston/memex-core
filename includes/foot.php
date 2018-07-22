@@ -1,7 +1,1 @@
-    <script src="js/blazy.min.js"></script>
-    <script>
-        ;(function() {
-            // Initialize
-            var bLazy = new Blazy();
-        })();
-    </script>
+<!-- Placeholder for Analytics, JavaScript, and other end-of-page content -->

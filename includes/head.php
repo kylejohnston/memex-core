@@ -1,3 +1,2 @@
-<!-- Placeholder for HEAD content -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/lazysizes.min.js" type="text/javascript"></script>

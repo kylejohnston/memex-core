@@ -7,17 +7,19 @@
   <title>memex</title>
   <?php include('includes/head.php'); ?>
 </head>
-<body class="home">
+<body>
   <header>
     <?php include('includes/header-nav.php'); ?>
   </header>
-  <article>
+  <div class="content">
+    <h1>memex demo</h1>
+  <article class="col-3">
   <?php
     $www_root = 'http://memex-core.local/img/';
     $dir = 'img/';
     include('includes/renderer.php');
   ?>
-</article>
+</article></div>
 
   <footer>
     <?php include('includes/footer.php'); ?>

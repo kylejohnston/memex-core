@@ -7,20 +7,25 @@
   <title>memex</title>
   <?php include('includes/head.php'); ?>
 </head>
-<body class="home">
+<body class="">
   <header>
     <?php include('includes/header-nav.php'); ?>
   </header>
-  <article class="home">
-      <p>The term <i>memex</i> comes from  <a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vanner Bush’s</a> 1945 <i>The Atlantic Monthly</i> article “ <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>.” The memex is described as “a device in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility” and an “enlarged intimate supplement to memory.”</p>
-  </article>
-  <article>
-  <?php
-    $www_root = 'http://memex-core.local/img/';
-    $dir = 'img/';
-    include('includes/renderer.php');
-  ?>
-</article>
+  <div class="content">
+    <article class="col-2">
+      <div class="column">
+        <p>The term <i>memex</i> comes from <a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vanner Bush’s</a> 1945 <i>The Atlantic Monthly</i> article <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">“As We May Think.”</a> The memex is described as “a device in which an individual stores all their books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility” and an “enlarged intimate supplement to memory.”</p>
+      </div>
+      <div class="column shim"></div>
+    </article>
+    <article class="col-3">
+      <?php
+        $www_root = 'http://memex-core.local/img/';
+        $dir = 'img/';
+        include('includes/renderer.php');
+      ?>
+    </article>
+  </div>
 
   <footer>
     <?php include('includes/footer.php'); ?>

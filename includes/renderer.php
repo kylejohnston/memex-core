@@ -11,7 +11,7 @@
       if ( ($file !== '.') && ($file !== '..') && (in_array( $file_type, $file_display)) ) {
         echo '
         <div class="item">
-          <a href="#',$file,'"><img class="b-lazy" src="//memex.local/img/loading.jpg" data-src="', $www_root, '/', $file, '" alt="', $file, '" alt="', $file, '" height="auto"></a>
+          <a href="#',$file,'"><img class="lazyload" src="img/loader.svg" data-src="', $www_root, '/', $file, '" alt="', $file, '" alt="', $file, '" width="auto" height="auto"></a>
         </div>
         <a href="#_" class="lightbox" id="',$file,'"><img src="', $www_root, '/', $file, '"></a>'
         ;
