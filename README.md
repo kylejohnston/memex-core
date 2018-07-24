@@ -1,5 +1,5 @@
 # memex core
-A simple PHP appliction that reads all images from a directory displays them on a page. Images are displayed in a simple grid layout using CSS grid. Features a CSS-only lightbox and lazy loading with lazysize.js.
+A simple PHP application that reads all images from a directory displays them on a page. Images are displayed in a simple grid layout using CSS grid. Features a CSS-only lightbox and lazy loading with lazysize.js.
 
 This is a bare bones, starter version of the application. View my [memex repository](https://github.com/kylejohnston/memex) to see how I'm using it as my personal [morgue file](https://en.wikipedia.org/wiki/Morgue_file) or flat file – kind of a self-hosted Pinterest that I use for design inspiration.
 
