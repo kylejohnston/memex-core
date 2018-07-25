@@ -20,8 +20,8 @@
     </article>
     <article class="col-3">
       <?php
-        $www_root = 'http://memex-core.local/img/';
-        $dir = 'img/';
+        $www_root = 'http://memex-core.local/img';
+        $dir = 'img';
         include('includes/renderer.php');
       ?>
     </article>
