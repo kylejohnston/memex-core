@@ -7,7 +7,8 @@
     $dir_contents = scandir( $dir );
 
     foreach ($dir_contents as $file) {
-      $file_type = strtolower(end(explode('.', $file)));
+      $explode = explode('.', $file);
+      $file_type = strtolower(end($explode));
       if ( ($file !== '.') && ($file !== '..') && (in_array( $file_type, $file_display)) ) {
         echo '
         <div class="item">
