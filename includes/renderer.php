@@ -5,6 +5,7 @@
     echo 'Directory \'', $dir, '\' not found!';
   } else {
     $dir_contents = scandir( $dir );
+    shuffle($dir_contents); // randomize the display order
 
     foreach ($dir_contents as $file) {
       $explode = explode('.', $file);
