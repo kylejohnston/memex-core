@@ -20,7 +20,7 @@
     </article>
     <article class="col-3">
       <?php
-        $www_root = 'http://memex-core.local/img';
+        $www_root = 'img';
         $dir = 'img';
         include('includes/renderer.php');
       ?>
